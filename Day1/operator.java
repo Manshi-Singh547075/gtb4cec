@@ -21,19 +21,21 @@ public class operator {
         int sum=0;
         for(int i=1;i<=25;i++){
            sum=sum+i;
-           System.out.print(sum+" , ");}
-        int x=5;
-        int c=0;
-        while (x<15) {
-            if(x%2==0){
-                System.out.println(x);
-                x++;}
-            else(x%7==0){
-                System.out.println(x);
-                x++;
-            }
-            
+           System.out.print(sum+" , ");
         }
+        //int x=5;
+       
+        /*while (x<15) {
+           x++;
+           if(x%2==0)
+                System.out.println(x);
+                
+           elif(x%7==0)
+                System.out.println(x);
+                
+        }*/
+            
+        
          
         
     }
