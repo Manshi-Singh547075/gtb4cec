@@ -1,5 +1,3 @@
-package Day1;
-
 public class operator {
     public static void main(String[] args) {
         //Arithmetic operator
