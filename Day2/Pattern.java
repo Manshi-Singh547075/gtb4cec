@@ -178,7 +178,7 @@ public class Pattern{
             System.out.println();
         }*/
         //Q17
-        /*for (int i=n-4; i>=1; i--){
+        for (int i=n-4; i>=1; i--){
             for (int j=1; j<=i; j++){
                 System.out.print("* ");
         }
@@ -208,7 +208,7 @@ public class Pattern{
                     System.out.print("* ");
             }
 
-    System.out.println("");}*/
+    System.out.println("");}
     //Q18
     /*for(int i=1;i<=n;i++){
         for (int k=(n-i);k>=1;k--)
@@ -229,7 +229,7 @@ public class Pattern{
             System.out.println();
     }*/
     //Q21
-        for(int i=1;i<=n;i++){
+        /*for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++)
                 System.out.print("* ");
             for(int k=1;k<=n-i;k++)
@@ -238,7 +238,7 @@ public class Pattern{
                 System.out.print("* ");
             System.out.println();
      
-        }
+        }*/
                 
 
             
