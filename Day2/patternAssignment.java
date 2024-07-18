@@ -2,12 +2,14 @@ public class patternAssignment {
     public static void main(String[] args) {
         int n = 5;
         //Q21
-       /*  for(int i=1;i<=n;i++){
+        /*for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++)
                 System.out.print("* ");
+            for(int k=n-i;k>=2;k--)
+                System.out.print("  ");
             for(int k=n-i;k>=1;k--)
                 System.out.print("  ");
-            for(int j2=1;j2<=i;j2++)
+            for(int j2=1;j2<=i && j2<n;j2++)
                 System.out.print("* ");
             System.out.println();}*/
         
@@ -17,12 +19,14 @@ public class patternAssignment {
                 System.out.print("* ");
             for(int k=n-i;k>=1;k--)
                 System.out.print("  ");
-            for(int j1=2;j1<=i;j1++)
+            for(int k=n-i;k>=2;k--)
+                System.out.print("  ");
+            for(int j1=1;j1<=i && j1<n;j1++)
                 System.out.print("* ");
             System.out.println();
-        }
+        }*/
     //Q23
-        for(int i=1;i<=n;i++){
+        /*for(int i=1;i<=n;i++){
             for(int k=(n-i);k>=1;k--)
                 System.out.print("  ");
             for(int j=1;j<=i;j++)
@@ -61,15 +65,14 @@ public class patternAssignment {
            
         System.out.println();}*/
     //Q25
-    /*for(int i=1;i<=n;i++){
+    for(int i=1;i<=n;i++){
         for(int k=(n-i);k>=1;k--)
             System.out.print("  ");
         for(int j=1;j<=i;j++){
             for(int x=1;x<=n*n;x++)
                 System.out.print(x);}
-        for(int j1=2;j1<=i;j1++)
-            System.out.print("1 ");
-        System.out.println();}*/
+        
+        System.out.println();}
 
     //Q26
     /*for(int i=1;i<=n;i++){
@@ -144,7 +147,7 @@ public class patternAssignment {
         System.out.println();}*/
     
     //Q31
-    for(int i=1;i<=n;i++){
+    /*for(int i=1;i<=n;i++){
         int a=n;
         for(int j=1;j<=n;j++){
                 if(i+j==n+1)
@@ -152,21 +155,28 @@ public class patternAssignment {
                 System.out.print(a+" ");
                 a--;}
             
-    System.out.println();}
+    System.out.println();}*/
+
     //Q32
     for(int i=1;i<=n;i++){
-        for (int j=1;j<=i;j++){
-            if(j%2!=0)
-                System.out.print(j+" ");
-            System.out.print("* ");
+        for (int j=1;j<=2*i-1;j++){
+            if(j%2==0){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print(i+" ");
+            }
         }
         System.out.println();
     }
     for(int i=n-1;i>=1;i--){
-        for (int j1=1;j1<=i;j1++){
-            if(j1%2!=0)
-                System.out.print(j1+" ");
-            System.out.print("* ");
+        for (int j1=1;j1<=2*i-1;j1++){
+            if(j1%2==0){
+                System.out.print("* ");
+            }
+            else{
+            System.out.print(i+" ");
+            }
         }
            
         System.out.println();
