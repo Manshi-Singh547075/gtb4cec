@@ -1,6 +1,6 @@
 package Day5;
-import java.util.Arrays;
-import java.util.Collections;;
+//import java.util.Arrays;
+//import java.util.Collections;;
 public class sorting {
     public static int minArray(int[] arr,int a){
         int min=a;

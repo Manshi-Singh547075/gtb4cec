@@ -5,8 +5,8 @@ public class Pattern{
         Scanner sc = new Scanner(System.in);
         int n= sc.nextInt();
         //Q1
-        //for(int i=1;i<=n;i++)
-           // System.out.print("* ");
+        for(int i=1;i<=n;i++)
+            System.out.print("* ");
 
         //Q2
         /*for(int i=1;i<=n;i++){
