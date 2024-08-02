@@ -1,28 +1,34 @@
-
 import java.util.*;
 public class Main {
-    public static int replace(int n){
-		if(n==0)
-        return 5;
-		int res=0;
-		int a=1;
-		while(n>0){
-            int digit=n%10;
-            if(digit==0)
-                digit=5;
-            res+=digit*a;
-            a*=10;
-            n/=10;
-        }
-		return res;	
-	}
-		
-    public static void main(String args[]) {
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		System.out.println(replace(n));
-
-    }
-   
+  public static int reverse(int x) {
+    int ans=revInt(x);
+    if(x<0)
+        ans*=(-1);
+    return ans;
+    
 }
-
+public static int revInt(int x){
+    x=Math.abs(x);
+    int c=0;
+    int t=x;
+    while(x!=0){
+        x/=10;
+        c++;
+    }
+    x=t;
+    int rev=0;
+    for(int i=0;i<c;i++){
+        rev=(rev*10)+x%10;
+        x/=10;
+    }
+return rev;
+}
+  
+	    public static void main(String args[]) {
+      //String s1="abcabcbb";
+      System.out.println(reverse(-12));
+		
+		
+        }
+}
+	
