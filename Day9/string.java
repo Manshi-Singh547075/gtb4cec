@@ -58,9 +58,9 @@ public class string{
     }
     public static void sub_str(String s){
         for(int i=0;i<s.length();i++){
-            for(int j=i+1;j<=s.length();j++){
-                System.out.println(s.substring(i,j));
-            }
+            for(int j=i;j<=s.length();j++)
+                 System.out.println(s.substring(i,j));
+            
         }
     }
 
@@ -77,15 +77,17 @@ public class string{
          //System.out.println(s4==s2);
         //System.out.println(s2==s5);
         //System.out.println(s1.charAt(0));
-        System.out.println(s1==s3);
-        System.out.println(changeName("meow"));
-        System.out.println(reverseName("Manshi"));
-        System.out.println(s4[1]== s1.charAt(1));
+        //System.out.println(s1==s3);
+        //System.out.println(changeName("meow"));
+        //System.out.println(reverseName("Manshi"));
+        //System.out.println(s4[1]== s1.charAt(1));
         System.out.println(palindrome("madam")); 
         System.out.println(revSentence("Hello world"));
         System.out.println(sub_String("Delusional", 0, 3));
         System.out.println("Ewwwwwww".substring(1,5));
         System.out.println(longestStr("ewwwwww"));
-        sub_str("abcde");
+        String[] arr = {"d","b","c","b","c","a"};
+        //sub_str("abcabcbb");
+        
     }
 }

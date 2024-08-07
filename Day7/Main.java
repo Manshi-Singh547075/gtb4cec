@@ -1,32 +1,39 @@
 import java.util.*;
 public class Main {
-  public static int reverse(int x) {
-    int ans=revInt(x);
-    if(x<0)
-        ans*=(-1);
-    return ans;
-    
-}
-public static int revInt(int x){
-    x=Math.abs(x);
-    int c=0;
-    int t=x;
-    while(x!=0){
-        x/=10;
-        c++;
+    public static int rangeSum(int[] nums, int n, int left, int right) {
+        int a=nums.length;
+        int m=0;
+        int[] arr = new int[n*(n+1)/2];
+        for(int i=0;i<a;i++){
+           for(int j=i;j<a;j++){
+                int sum=0;
+                for(int k=i;k<=j;k++){
+                    sum+=nums[k];
+                    System.out.print(sum+" ");
+                    //arr[m]=sum;
+                    //m++;
+                }
+                for(int m=0;m<arr.length;m++){
+                    
+                }
+                
+            }
+           
+        }
+        for(int i=0;i<nums.length;i++)
+            System.out.print(nums[i]+" ");
+        return 0;
+        /*int s=0;
+        for(int i=left-1;i<right;i++){
+            s+=arr[i];
+        }
+        return s;*/
     }
-    x=t;
-    int rev=0;
-    for(int i=0;i<c;i++){
-        rev=(rev*10)+x%10;
-        x/=10;
-    }
-return rev;
-}
+ 
   
 	    public static void main(String args[]) {
-      //String s1="abcabcbb";
-      System.out.println(reverse(-12));
+            int[] nums = {1,2,3,4};
+            rangeSum(nums,4,3,4);
 		
 		
         }

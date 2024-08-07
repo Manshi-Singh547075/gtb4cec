@@ -7,7 +7,10 @@ public class Students {
     int year=0;
     private int branch_code=-1;
     Branch branch=new Branch();
-    public Students(){}
+
+    public Students()
+    {}
+
     public Students(int rollno, String s, int sem, int year, int branch){
         this.rollno=rollno;
         this.name=s;
@@ -16,6 +19,12 @@ public class Students {
         this.branch_code=branch;
 
 
+    }
+
+    public Students( String s, int sem, int year){
+        this.name=s;
+        this.sem=sem;
+        this.year=year;
     }
     // Getters and setters
     int getBranchCode(){

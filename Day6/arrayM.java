@@ -47,7 +47,7 @@ public static void display(int[] arr){
         System.out.print(arr[i]+" ");
 }
     public static void main(String[] args) {
-        int[] arr = {-1,-2,-4,-5,-6};
+        int[] arr = {-1,-2,-4,-5,6};
         subArray(arr);
         Kadane(arr);
         //rotateArr(arr,3);
